@@ -12,8 +12,8 @@ app.get('/', (req, res) => {
     res.json({ message: 'Gestor de tasques en funcionament!' });
 });
 
-// Importar rutes (les descomentarem quan creem el fitxer)
-// const taskRoutes = require('./routes/taskRoutes');
-// app.use('/api/tasks', taskRoutes);
+// Importar i activar les rutes de tasques
+const taskRoutes = require('./routes/taskRoutes');
+app.use('/api/tasks', taskRoutes);
 
 module.exports = app; // Exportar l'aplicació
