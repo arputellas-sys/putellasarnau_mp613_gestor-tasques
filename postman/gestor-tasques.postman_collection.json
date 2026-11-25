@@ -1,0 +1,182 @@
+{
+  "info": {
+    "_postman_id": "87148e57-e478-4546-a2e6-0b9dad06d8c5",
+    "name": "PutellasArnau_gestor-tasques",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58523517",
+    "_collection_link": "https://go.postman.co/collection/58523517-87148e57-e478-4546-a2e6-0b9dad06d8c5?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "1. POST",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Dissenyar una pàgina web\",\n  \"description\": \"Crear una pàgina web responsiva amb HTML, CSS i JavaScript\",\n  \"cost\": 500,\n  \"hours_estimated\": 20,\n  \"image\": \"https://example.com/images/task1.jpg\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/tasks",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "2. POST",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"description\": \"Tasca sense títol ni cost per forçar error 400\",\n  \"hours_estimated\": 10\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/tasks",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "3. GET",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/tasks",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "4. GET",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/tasks/6afdf287f5757fb23c2b1982",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "tasks",
+            "6afdf287f5757fb23c2b1982"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "5. GET",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/tasks/6734a1f2c9e7b3d1a0f40000",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "tasks",
+            "6734a1f2c9e7b3d1a0f40000"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "6. PUT",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"completed\": true,\n  \"hours_real\": 15,\n  \"image\": \"https://example.com/images/updated_task.jpg\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/tasks/6afdf5ddf5757fb23c2b1984",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "tasks",
+            "6afdf5ddf5757fb23c2b1984"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "7. DELETE",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/tasks/6afdf5ddf5757fb23c2b1984",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "tasks",
+            "6afdf5ddf5757fb23c2b1984"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
